@@ -52,7 +52,7 @@ Els paquets principals descrits en el ```requirements.txt``` i les seves funcion
 
 ```staticmap``` - Per pintar mapes.
 
-## Mòdul ```billboard.py```
+## Mòdul ```billboard```
 
 El mòdul ```billboard``` s'encarrega d'aconseguir les dades de tots els cinemes de Barcelona i les seves cartelleres mitjançant el web scraping.
 
@@ -60,7 +60,7 @@ La funció principal del programa és ```read``` la qual obté les dades dels ar
 
 Addicionalment, s'ha implementat un conjunt de funcions que apliquen filtres de cerca per tal de facilitar a l'usuari trobar la informació segons les seves preferències. 
 
-## Mòdul ```buses.py```
+## Mòdul ```buses```
 
 El mòdul ```buses``` s'encarrega de crear un graf no dirigit de les línies d'autobús de Barcelona a partir de les dades llegides d'un fitxer ```.json``` de la AMB. Els nodes del graf representen les parades de bus, i les arestes el recorregut traçat pel bus de parada a parada. 
 
@@ -70,7 +70,7 @@ El mòdul proporciona dues accions per visualitzar els resultats en una imatge.
 - L'acció ```show``` mostra interactivament en una finestra el graf de busos. 
 - L'acció ```plot``` guarda en una imatge el graf de busos amb el mapa de Barcelona de fons. 
 
-## Mòdul ```city.py```
+## Mòdul ```city```
 
 El mòdul ```city``` és el responsable de proporcionar el **graf de la ciutat** que conté tota la informació necessària per torbar la ruta més ràpida entre dos punts de Barcelona, sigui amb autobús o a peu. El graf de la ciutat és producte de la fusió de dos grafs: El graf de Barcelona (obtingut del mòdul ```osmnx```) i el graf de busos (```buses.py```)  
 
@@ -85,7 +85,7 @@ El mòdul proporciona accions per visualitzar els resultats en una imatge.
 - El ```plot``` guarda en una imatge el graf de la ciutat amb el mapa de Barcelona de fons. 
 - El ```plot_path``` permet veure una imatge de la ruta a seguir per arribar a la destinació. 
 
-## Mòdul ```demo.py```
+## Mòdul ```demo```
 
 El mòdul ```demo``` és el programa principal i permet interactuar amb l'usuari. Inclou la visualització de la cartellera de pel·lícules la qual podem aplicar filtres per facilitar la cerca.
 També mostra el graf de busos i de la ciutat. 
